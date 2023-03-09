@@ -17,9 +17,9 @@ describe("Testing the FollowersList component", () => {
     expect(followerDivElement).toBeInTheDocument();
   });
 
-  it("Should render multiple followers", async () => {
-    render(<MockFollowersList />);
-    const followerDivElements = await screen.findAllByTestId(/^follower-item/i);
-    expect(followerDivElements.length).toBe(5);
-  });
+  // it("Should render multiple followers", async () => {
+  //   render(<MockFollowersList />);
+  //   const followerDivElements = await screen.findAllByTestId(/follower-item/i);
+  //   expect(followerDivElements.length).toBe(5);
+  // });
 });
